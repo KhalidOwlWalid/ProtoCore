@@ -1,3 +1,0 @@
-[submodule "external/lib/mavlink"]
-	path = external/lib/mavlink
-	url = git@github.com:mavlink/mavlink.git
