@@ -12,6 +12,7 @@ project(
   VERSION 1.0
   LANGUAGES CXX)
 
+find_package(MAVLink REQUIRED)
 include_directories(include)
 
 if (WIN32)
@@ -23,9 +24,10 @@ if (WIN32)
 endif()
 
 add_executable(${project_name} main.cpp)
+target_link_libraries(${project_name} PRIVATE MAVLink::mavlink)
 
 if (WIN32)
-    target_link_libraries(${project_name} ws2_32)
+    target_link_libraries(${project_name} PRIVATE ws2_32)
 endif()
 
 
