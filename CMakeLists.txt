@@ -23,7 +23,7 @@ if (WIN32)
     )
 endif()
 
-add_executable(${project_name} main.cpp)
+add_executable(${project_name} mavlink_listener.cpp)
 target_link_libraries(${project_name} PRIVATE MAVLink::mavlink)
 
 if (WIN32)
