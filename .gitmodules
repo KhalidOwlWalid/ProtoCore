@@ -1,3 +1,6 @@
-[submodule "external/lib/mavlink"]
-	path = external/lib/mavlink
+[submodule "external/modules/mavlink"]
+	path = external/modules/mavlink
 	url = git@github.com:mavlink/mavlink.git
+[submodule "external/modules/spdlog"]
+	path = external/modules/spdlog
+	url = git@github.com:gabime/spdlog.git
